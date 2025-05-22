@@ -9,3 +9,4 @@
     <a href="${pageContext.request.contextPath}/categories">Voir les catégories</a>
 </body>
 </html>
+

@@ -15,17 +15,14 @@ public class CategorieServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
 
-        // Liste fictive de catégories (plus tard on les chargera depuis la BD)
         List<Categorie> categories = new ArrayList<>();
         categories.add(new Categorie(1, "Romans anciens"));
         categories.add(new Categorie(2, "Sciences et techniques"));
         categories.add(new Categorie(3, "Philosophie"));
         categories.add(new Categorie(4, "Livres illustrés"));
 
-        // Attacher la liste à la requête
         request.setAttribute("categories", categories);
 
-        // Rediriger vers la vue
         RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/categories.jsp");
         dispatcher.forward(request, response);
     }

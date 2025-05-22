@@ -9,9 +9,19 @@
     <ul>
         <%
             List<Categorie> categories = (List<Categorie>) request.getAttribute("categories");
-            for (Categorie cat : categories) {
+            if (categories != null) {
+                for (Categorie cat : categories) {
         %>
-            <li><a href="#"><%= cat.getNom() %></a></li>
+            <li>
+                <a href="<%= request.getContextPath() %>/livres?cat=<%= cat.getId() %>">
+                    <%= cat.getNom() %>
+                </a>
+            </li>
+        <%
+                }
+            } else {
+        %>
+            <li>Aucune catégorie disponible.</li>
         <%
             }
         %>

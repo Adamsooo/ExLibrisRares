@@ -24,15 +24,25 @@ Ce projet est une application web de vente en ligne de livres rares et anciens, 
 - Validation de commande avec enregistrement BD
 - Interface simple et intuitive
 
-## 📂 Structure du projet
+## 🗂 Structure du projet
 
-```
-/src            -> Code Java (Servlets, DAO, modèles)
-/WebContent     -> JSP, ressources (CSS, images)
-/sql            -> Script de création de la base de données
-/doc            -> Maquettes, diagrammes UML, consignes
-README.md       -> Ce fichier
-```
+```plaintext
+ExLibrisRares/
+├── src/
+│   └── com.exlibrisrares.controller/   → Servlets (Accueil, Catégories, Livres, Panier)
+│   └── com.exlibrisrares.model/        → Modèles (Categorie, Livre, Panier)
+│   └── com.exlibrisrares.dao/          → DAO (CategorieDAO) ← à venir
+├── WebContent/
+│   ├── index.jsp                       → Page d'accueil
+│   ├── jsp/
+│   │   ├── categories.jsp              → Liste des catégories
+│   │   ├── livres.jsp                  → Liste des livres d’une catégorie
+│   │   └── panier.jsp                  → Panier d’achat
+│   ├── css/                            → (optionnel)
+│   └── WEB-INF/
+│       └── web.xml                    → Descripteur de déploiement
+
+
 
 ## 🧪 Installation et exécution
 
@@ -48,6 +58,6 @@ git clone https://github.com/tonusername/ex-libris-rares.git
 
 ## 📝 Auteur
 
-- Nom : [Ton Nom]
-- Formation : Étudiant en dernière année d'ingénierie informatique
-- Université : [Nom de l’établissement]
+- Nom : Adams OUEDRAOGO
+- Formation : E5 INF
+- Université : ESIEE Paris

@@ -1,9 +1,9 @@
 package com.exlibrisrares.controller;
 
 import java.io.IOException;
-import jakarta.servlet.*;
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.WebServlet;
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.annotation.WebServlet;
 
 @WebServlet("/accueil")
 public class AccueilServlet extends HttpServlet {
@@ -11,8 +11,7 @@ public class AccueilServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
-        // Redirige vers la page d'accueil JSP
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/index.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
         dispatcher.forward(request, response);
     }
 }
