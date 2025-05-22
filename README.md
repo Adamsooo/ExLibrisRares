@@ -46,11 +46,7 @@ ExLibrisRares/
 
 ## 🧪 Installation et exécution
 
-1. Cloner le projet :
-```bash
-git clone https://github.com/adamsooo/ex-libris-rares.git
-```
-
+1. Cloner le projet :git clone https://github.com/adamsooo/ex-libris-rares.git
 2. Importer le projet dans Eclipse (Dynamic Web Project)
 3. Configurer le serveur Apache Tomcat
 4. Créer la base de données via `/sql/create_db.sql`
