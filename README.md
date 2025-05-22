@@ -26,7 +26,7 @@ Ce projet est une application web de vente en ligne de livres rares et anciens, 
 
 ## 🗂 Structure du projet
 
-```plaintext
+
 ExLibrisRares/
 ├── src/
 │   └── com.exlibrisrares.controller/   → Servlets (Accueil, Catégories, Livres, Panier)
