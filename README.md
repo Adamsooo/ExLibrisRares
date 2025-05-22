@@ -48,7 +48,7 @@ ExLibrisRares/
 
 1. Cloner le projet :
 ```bash
-git clone https://github.com/tonusername/ex-libris-rares.git
+git clone https://github.com/adamsooo/ex-libris-rares.git
 ```
 
 2. Importer le projet dans Eclipse (Dynamic Web Project)
