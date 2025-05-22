@@ -41,7 +41,7 @@ ExLibrisRares/
 │   ├── css/                            → (optionnel)
 │   └── WEB-INF/
 │       └── web.xml                    → Descripteur de déploiement
-```plaintext
+```
 
 ## 🧪 Installation et exécution
 
