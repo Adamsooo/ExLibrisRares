@@ -1,16 +1,8 @@
-# Ex Libris Rares – Mini-projet JEE e-commerce
+# Ex Libris Rares 
 
-> Application web de vente de livres rares, développée dans le cadre du module FAE 2025.  
+> Application web de vente de livres rares.  
 > Ce projet respecte l'architecture **MVC 2** et utilise les technologies Java EE.
 
----
-
-## 📚 Contexte
-
-*Ex Libris Rares* est un site e-commerce fictif dédié aux passionnés de bibliophilie.  
-Les utilisateurs peuvent consulter des ouvrages classés par catégorie, les ajouter à un panier virtuel, gérer leurs achats, puis finaliser leur commande.
-
----
 
 ## 🎯 Objectifs pédagogiques
 
