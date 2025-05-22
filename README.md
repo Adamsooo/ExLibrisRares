@@ -1,28 +1,54 @@
 # Ex Libris Rares – Mini-projet JEE e-commerce
 
-Ce projet est une application web de vente en ligne de livres rares et anciens, développée dans le cadre du module FAE 2025. L'application repose sur les technologies Java EE (JEE) et respecte l'architecture MVC 2.
+> Application web de vente de livres rares, développée dans le cadre du module FAE 2025.  
+> Ce projet respecte l'architecture **MVC 2** et utilise les technologies Java EE.
+
+---
 
 ## 📚 Contexte
 
-*Ex Libris Rares* est un site fictif permettant aux passionnés de bibliophilie d'acheter des ouvrages rares, classés par catégories. Le client peut consulter les produits, les ajouter à un panier virtuel, modifier sa commande, et finaliser l’achat après authentification. Les données sont stockées dans une base de données relationnelle.
+*Ex Libris Rares* est un site e-commerce fictif dédié aux passionnés de bibliophilie.  
+Les utilisateurs peuvent consulter des ouvrages classés par catégorie, les ajouter à un panier virtuel, gérer leurs achats, puis finaliser leur commande.
+
+---
+
+## 🎯 Objectifs pédagogiques
+
+- Mettre en œuvre un site dynamique avec JEE
+- Appliquer le modèle MVC2 dans une architecture modulaire
+- Utiliser les Servlets, JSP, sessions, et JDBC
+- Structurer un projet déployable sur Tomcat
+- Gérer un dépôt Git avec GitHub (livrables, historique, README)
+
+---
 
 ## 🧱 Technologies utilisées
 
 - Java EE (Servlets, JSP, JDBC)
-- Apache Tomcat
-- MySQL
-- HTML / CSS (Bootstrap)
+- Apache Tomcat 10.0
+- MySQL / phpMyAdmin
+- HTML / CSS
 - UML (StarUML, Draw.io)
 - Git / GitHub
+- Eclipse EE
 
-## 🗺️ Fonctionnalités principales
+---
 
-- Navigation par catégories
-- Affichage des livres avec descriptions détaillées
-- Ajout au panier, modification des quantités, suppression
-- Connexion client
-- Validation de commande avec enregistrement BD
-- Interface simple et intuitive
+## 🧩 Fonctionnalités réalisées
+
+| Fonction                       | Statut   |
+|-------------------------------|----------|
+| Architecture MVC2             | ✅       |
+| Navigation par catégories     | ✅       |
+| Affichage dynamique des livres| ✅       |
+| Panier (ajout + affichage)    | ✅       |
+| Vider le panier               | ✅       |
+| DAO `CategorieDAO` opérationnel| ✅       |
+| Connexion à la base de données| 🔜 En cours |
+| Validation de commande        | 🔜 À venir |
+| Authentification client       | 🔜 À venir |
+
+---
 
 ## 🗂 Structure du projet
 
@@ -31,28 +57,40 @@ ExLibrisRares/
 ├── src/
 │   └── com.exlibrisrares.controller/   → Servlets (Accueil, Catégories, Livres, Panier)
 │   └── com.exlibrisrares.model/        → Modèles (Categorie, Livre, Panier)
-│   └── com.exlibrisrares.dao/          → DAO (CategorieDAO) ← à venir
+│   └── com.exlibrisrares.dao/          → DAO (CategorieDAO)
 ├── WebContent/
 │   ├── index.jsp                       → Page d'accueil
 │   ├── jsp/
 │   │   ├── categories.jsp              → Liste des catégories
 │   │   ├── livres.jsp                  → Liste des livres d’une catégorie
 │   │   └── panier.jsp                  → Panier d’achat
-│   ├── css/                            → (optionnel)
+│   ├── css/                            → Feuilles de style (optionnel)
 │   └── WEB-INF/
-│       └── web.xml                    → Descripteur de déploiement
+│       └── web.xml                     → Descripteur de déploiement
+├── sql/
+│   └── create_db.sql                  → Script de création de la BDD
+├── README.md
 ```
 
 ## 🧪 Installation et exécution
 
-1. Cloner le projet :git clone https://github.com/adamsooo/ex-libris-rares.git
-2. Importer le projet dans Eclipse (Dynamic Web Project)
-3. Configurer le serveur Apache Tomcat
-4. Créer la base de données via `/sql/create_db.sql`
-5. Lancer l'application : [http://localhost:8080/ExLibrisRares](http://localhost:8080/ExLibrisRares)
+1. Cloner le projet: git clone https://github.com/adamsooo/ex-libris-rares.git
+2. Importer dans Eclipse Fichier > Import > Dynamic Web Project > Sélectionner le dossier
+
+3. Configurer Apache Tomcat 10.0
+Dans Eclipse : Servers > Add > Tomcat v10.0 > Sélectionner répertoire Tomcat
+
+4. Créer la base de données
+Ouvrir phpMyAdmin ou MySQL Workbench
+
+Exécuter le script sql/create_db.sql
+
+5. Lancer l'application
+Run on Server depuis Eclipse
+
+6. Accéder à l'application: http://localhost:8080/ExLibrisRares/
 
 ## 📝 Auteur
-
 - Nom : Adams OUEDRAOGO
 - Formation : E5 INF
 - Université : ESIEE Paris
